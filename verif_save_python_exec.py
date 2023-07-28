@@ -26,18 +26,18 @@ def read_json(file):
 def check_and_copy_files():
     while True:
         data = read_json("data_file.json")
-        command = "find /home/johan/loisirs -type f -name '*.py'"
+        command = "find folder/to/verification -type f -name '*.py'"
         result = subprocess.run(command, shell=True, stdout=subprocess.PIPE, text=True)
         files = result.stdout.splitlines()
         times = [round(get_file_size(x)) for x in files]
         dictio = dict(zip(files, times))
 
-        if not os.path.exists("/home/johan/save"):
-            os.mkdir("/home/johan/save")
+        if not os.path.exists("save_folder"):
+            os.mkdir("save_folder")
 
         for key, value in dictio.items():
             if key not in data or value != data[key]:
-                os.system(f"cp {key} /home/johan/save/")
+                os.system(f"cp {key} save_folder")
 
         write_json(dictio, "data_file.json")
         time.sleep(1)  # Wait for an hour before checking again

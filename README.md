@@ -1,12 +1,12 @@
-# Readme - File Monitoring and Backup
+# Readme - File Monitoring and Backup
 
 This Python script monitors specific files in a folder, checks if they have been modified, and makes a backup of the modified files.
 
-## Prerequisites
+## Prerequisites
 
 - Python 3.x
 
-## Usage
+## Usage
 
 1. Replace "folder/to/verification" in the script with the actual folder path that contains the files you want to monitor.
 2. Run the Python script (filename.py) to start the file monitoring process.
@@ -21,7 +21,7 @@ This Python script monitors specific files in a folder, checks if they have been
 3. If any file has been modified or is new, it copies the file to the "save_folder" directory.
 4. The script keeps track of the file sizes in the data_file.json to determine if there have been any changes in subsequent checks.
 
-## Disclaimer
+## Disclaimer
 
 This script is intended to be used for monitoring and backing up files in a specific folder. Ensure that you provide the correct folder path in the script and customize it to suit your specific use case.
 

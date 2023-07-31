@@ -28,3 +28,4 @@ This script is intended to be used for monitoring and backing up files in a spec
 Please note that this README is meant to provide an overview and explanation of the script. For a complete working version, ensure that the required modules are available, and the Python script is executed correctly. Modify and customize the script as needed to suit your project's specific requirements.
 
 Feel free to use this markdown as a template for your README. You can further tailor the content and format to meet your project's specific requirements.
+The author is not responsible for any future errors or accidents
